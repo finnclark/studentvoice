@@ -26,13 +26,13 @@
 body{
 	background-image: url('../img/paper.png');
 	background-repeat: repeat;
-	font-family: "founders-reg";
+	font-family: "founders-reg", helvetica, sans-serif;
 	height: 100%;
-	color: #2B5166;
+	color: #231F20;
 }
 
 h1{
-	font-family: Courier, sans-serif;
+	font-family: Courier, serif;
 	text-transform: uppercase;
 	font-size: 22px;
 	width: 500px;
@@ -43,14 +43,14 @@ h1{
 }
 
 h2{
-	font-family: Courier, sans-serif;
+	font-family: Courier, serif;
 	text-transform: uppercase;
 	font-size: 16px;
 	margin: 0;
 }
 
 h3{
-	font-family: Courier, sans-serif;
+	font-family: Courier, serif;
 	text-transform: uppercase;
 	font-size: 16px;
 	color: #F7F7F8;
@@ -58,6 +58,12 @@ h3{
 	-ms-transform: rotate(270deg); /* IE 9 */
 	-webkit-transform: rotate(270deg); /* Chrome, Safari, Opera */
 	transform: rotate(270deg);
+}
+
+h4{
+	font-family: "founders-med", helvetica, sans-serif;
+	font-size: 14px;
+	margin: 0;
 }
 
 p{
@@ -81,6 +87,15 @@ a:hover{
 	margin: 0;
 }
 
+hr{
+	border-top: 3px solid #2B5166;
+	width: 100vw;
+	margin: 67px 0 0 0;
+}
+
+.grey{
+	background-color: #F7F7F8;
+}
 
 
 /* Landing Page */
@@ -139,27 +154,45 @@ a:hover{
 	margin-left: 24px;
 }
 
-.intro div{
-	margin: 100px 0 0 200px;
-	width: 500px;
+.two-col-row{
+	width: 1140px;
+	margin: 0 auto;
 }
 
-.intro div h2{
+.two-column{
+	margin: 125px 85px 0 85px;
+	width: 400px;
+	padding: 0;
+}
+
+.two-column h2{
 	margin-bottom: 40px;
 }
 
-.tabs div h3{
+.tab{
 	background-color: #2B5166;
 	width: 200px;
 	height: 40px;
-	padding: 12px 0px 0px 0;
+	padding: 12px 0px 0px 40px;
 	float: right;
 	border-radius: 50px 0 0 0;
-	text-align: center;
 	position: relative;
-	left: 95px;
-	bottom: 347px;
+	left: 230px;
+	bottom: 468px;
 }
+
+.two-col-row div h4{
+	margin-bottom: 10px;
+}
+
+.two-col-row div p{
+	margin-bottom: 30px;
+}
+
+.two-col-row div p:last-child{
+	margin-bottom: 0;
+}
+
 
 
 
