@@ -90,7 +90,7 @@ a:hover{
 hr{
 	border-top: 3px solid #2B5166;
 	width: 100vw;
-	margin: 67px 0 0 0;
+	margin: 100px 0 0 0;
 }
 
 .grey{
@@ -173,12 +173,19 @@ hr{
 	background-color: #2B5166;
 	width: 200px;
 	height: 40px;
+	margin-bottom: -40px;
 	padding: 12px 0px 0px 40px;
 	float: right;
 	border-radius: 50px 0 0 0;
-	position: relative;
-	left: 230px;
-	bottom: 468px;
+	position: absolute;
+	right: -80px;
+}
+
+.tab-community{
+	top: 200px;
+}
+.tab-grades{
+	top: 850px;
 }
 
 .two-col-row div h4{
