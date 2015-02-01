@@ -124,13 +124,26 @@ hr{
 	font-size: 16px;
 	font-family: Courier, sans-serif;
 	text-transform: uppercase;
-
 }
 .landing-panel div a:hover{
 	background-color: #2B5166;
 	color: #EEEFEE;
 	border: 1px solid #EEEFEE;
 	margin: 0 29px;
+}
+
+.landing-panel div br{
+	display: none;
+}
+
+@media (max-width: 750px){
+	.landing-panel div br{
+		display: initial;
+	}
+
+	.landing-panel div img{
+		margin-bottom: 205px;
+	}
 }
 
 
