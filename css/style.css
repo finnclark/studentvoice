@@ -160,7 +160,7 @@ hr{
 }
 
 .two-column{
-	margin: 125px 85px 0 85px;
+	margin: 125px 85px 0;
 	width: 400px;
 	padding: 0;
 }
@@ -201,8 +201,38 @@ hr{
 }
 
 
+/* Survival Guide Media Queries */
 
 
+@media (max-width: 1140px){
+
+	.tab-grades{
+		top: 1140px;
+	}
+
+	.two-col-row{
+		width: 100%;
+	}
+
+	.two-column{
+		margin: 125px 0 0;
+		padding: 0 20%;
+		width: auto;
+	}
+}
+
+@media (max-width: 992px){
+
+	.header div a {
+		margin-top: -9px;
+	}
+
+	.two-column{
+		padding: 0 20%;
+	}
+
+
+}
 
 
 
