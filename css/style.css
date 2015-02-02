@@ -189,12 +189,10 @@ hr{
 	background-color: #2B5166;
 	width: 200px;
 	height: 40px;
-	margin-bottom: -40px;
+	margin: 80px -80px -40px 0;
 	padding: 12px 0px 0px 40px;
 	float: right;
 	border-radius: 50px 0 0 0;
-	position: absolute;
-	right: -80px;
 }
 
 .tab-community{
