@@ -6,8 +6,14 @@
 		<title>Student Voice</title>
 		<link rel="stylesheet" href="css/bootstrap.css">
 		<link rel="stylesheet" href="css/style.css">
+		<script src="http://code.jquery.com/jquery-1.11.2.min.js"></script>
+		<script src="http://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+		<script type="text/javascript" src="js/jquery.waypoints.min.js"></script>
+		<script type="text/javascript" src="js/sticky.min.js"></script>
 </head>
 <body>
+
+
 
 	<div class="container-fluid">
 		<div class="row header">
@@ -22,7 +28,7 @@
 
 	<div class="container-fluid">
 
-		<h3 class="tab">Community</h3>
+		<h3 class="tab sticky-tab1">Community</h3>
 
 		<div class="row two-col-row">
 
@@ -48,7 +54,7 @@
 
 	<div class="container-fluid grey">
 
-		<h3 class="tab">Grades</h3>
+		<h3 class="tab sticky-tab2">Grades</h3>
 
 		<div class="row two-col-row">
 			<div class="col-md-6 col-sm-12 two-column">
@@ -67,7 +73,7 @@
 
 	<div class="container-fluid">
 
-		<h3 class="tab">Community</h3>
+		<h3 class="tab sticky-tab3">Community</h3>
 
 		<div class="row two-col-row">
 
@@ -88,5 +94,18 @@
 		</div>
 		<hr>
 	</div>
+
+
+<script type="text/javascript">
+	var sticky = new Waypoint.Sticky({
+	  element: $('.sticky-tab1')[0]
+	})
+	var sticky = new Waypoint.Sticky({
+	  element: $('.sticky-tab2')[0]
+	})
+	var sticky = new Waypoint.Sticky({
+	  element: $('.sticky-tab3')[0]
+	})
+</script>
 
 </body>

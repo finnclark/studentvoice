@@ -195,11 +195,14 @@ hr{
 	border-radius: 50px 0 0 0;
 }
 
-.tab-community{
-	top: 200px;
+.sticky-wrapper{
+	height: 0 !important;
 }
-.tab-grades{
-	top: 850px;
+
+.stuck{
+	position: fixed;
+	top: 0;
+	right: 0px;
 }
 
 .two-col-row div h4{
@@ -219,10 +222,6 @@ hr{
 
 
 @media (max-width: 1140px){
-
-	.tab-grades{
-		top: 1140px;
-	}
 
 	.two-col-row{
 		width: 100%;
