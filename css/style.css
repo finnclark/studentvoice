@@ -69,6 +69,15 @@ h4{
 	margin: 0;
 }
 
+h5{
+	font-family: Courier, serif;
+	text-transform: uppercase;
+	font-size: 14px;
+	letter-spacing: 1px;
+	margin: 0;
+	color: #231F20;
+}
+
 p{
 	font-size: 14px;
 	line-height: 1.9;
@@ -88,11 +97,16 @@ a:hover{
 
 .row{
 	margin: 0;
+	padding: 0;
+}
+
+.col-md-10{
+	padding: 0;
 }
 
 hr{
 	border-top: 3px solid #2B5166;
-	width: 100vw;
+	width: 100%;
 	margin: 100px 0 0 0;
 }
 
@@ -117,22 +131,23 @@ hr{
 	height: 200px;
 	margin-top: 250px;
 	display: inline-block;
-	margin-bottom: 250px;
+	margin-bottom: 140px;
 }
 
 .landing-panel div a{
-	background-color: #EEEFEE;
 	padding: 4px 6px;
-	margin: 0px 30px;
 	font-size: 16px;
 	font-family: Courier, sans-serif;
 	text-transform: uppercase;
-}
-.landing-panel div a:hover{
 	background-color: #2B5166;
 	color: #EEEFEE;
 	border: 1px solid #EEEFEE;
-	margin: 0 29px;
+	margin: 0 30px;
+
+}
+.landing-panel div a:hover{
+	background-color: #EEEFEE;
+	color: #2B5166;
 }
 
 .landing-panel div br{
@@ -157,39 +172,53 @@ hr{
 
 .header{
 	text-align: center;
+	height: 120px;
 	background-image: url('../img/lines.svg');
 	background-repeat: no-repeat;
 	background-size: 1500px 200px;
-	height: 120px;
+	border-bottom: 1px solid #2B5166;
 }
 
-.header div a{
-	width: 75px;
-	float: left;
-	margin-top: 34px;
-	margin-left: 24px;
+.sidebar.stuck{
+	position: fixed;
+	top: 0;
+	right: initial;
 }
 
-.two-col-row{
-	width: 1140px;
-	margin: 0 auto;
+.sidebar{
+	width: 200px;
+	height: 800px;
+	text-align: center;
+	background-color: #EEEFEE;
+	border-right: 1px solid #2B5166;
 }
 
-.two-column{
-	margin: 125px 85px 0;
-	width: 400px;
-	padding: 0;
+.sidebar a img{
+	width: 100px;
+	margin: 30px auto 30px;
 }
 
-.two-column h2{
-	margin-bottom: 40px;
+.sidebar h2{
+	margin-bottom: 50px;
+	font-size: 18px;
+}
+
+.sidebar a h5{
+	margin: 20px 0;
+	padding: 4px; 
+	background-color: #eeefee;
+	border: 1px solid #2B5166;
+}
+.sidebar a h5:hover{
+	background-color: #2B5166;
+	color: #EEEFEE;
 }
 
 .tab{
 	background-color: #2B5166;
 	width: 200px;
 	height: 40px;
-	margin: 80px -80px -40px 0;
+	margin: 79px -120px -120px 0;
 	padding: 12px 0px 0px 40px;
 	float: right;
 	border-radius: 50px 0 0 0;
@@ -202,18 +231,26 @@ hr{
 .stuck{
 	position: fixed;
 	top: 0;
-	right: 0px;
+	right: 40px;
 }
 
-.two-col-row div h4{
-	margin-bottom: 10px;
+.column-content{
+	padding: 100px 100px;
 }
 
-.two-col-row div p{
+.column-content h2{
 	margin-bottom: 30px;
 }
 
-.two-col-row div p:last-child{
+.column-content h4{
+	margin-bottom: 10px;
+}
+
+.column-content p{
+	margin-bottom: 30px;
+}
+
+.column-content p:last-child{
 	margin-bottom: 0;
 }
 
