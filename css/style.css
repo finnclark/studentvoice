@@ -100,7 +100,7 @@ a:hover{
 	padding: 0;
 }
 
-.col-md-10{
+.col-md-12{
 	padding: 0;
 }
 
@@ -112,6 +112,12 @@ hr{
 
 .grey{
 	background-color: #F7F7F8;
+}
+
+ul{
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
 }
 
 
@@ -186,6 +192,7 @@ hr{
 }
 
 .sidebar{
+	z-index: 333;
 	width: 200px;
 	height: 800px;
 	text-align: center;
@@ -203,6 +210,10 @@ hr{
 	font-size: 18px;
 }
 
+.guide-dropdown li a h2{
+	display: none;
+}
+
 .sidebar a h5{
 	margin: 20px 0;
 	padding: 4px; 
@@ -218,10 +229,14 @@ hr{
 	background-color: #2B5166;
 	width: 200px;
 	height: 40px;
-	margin: 79px -120px -120px 0;
+	margin: 79px -80px -120px 0;
 	padding: 12px 0px 0px 40px;
 	float: right;
 	border-radius: 50px 0 0 0;
+}
+
+.sidebar-sticky-wrapper{
+	position: absolute;
 }
 
 .sticky-wrapper{
@@ -231,11 +246,11 @@ hr{
 .stuck{
 	position: fixed;
 	top: 0;
-	right: 40px;
+	right: 0;
 }
 
 .column-content{
-	padding: 100px 100px;
+	padding: 100px 0 100px 13%;
 }
 
 .column-content h2{
@@ -260,53 +275,103 @@ hr{
 
 @media (max-width: 1140px){
 
-	.two-col-row{
-		width: 100%;
-	}
-
-	.two-column{
-		margin: 125px 0 0;
-		padding: 0 20%;
-		width: auto;
+	.column-content{
+		padding: 100px 0 100px 15%;
 	}
 }
 
 @media (max-width: 992px){
 
-	.header div a {
-		margin-top: -9px;
-	}
-
-	.two-column{
-		padding: 0 20%;
+	.column-content{
+		padding: 100px 13% 40px 35%;
 	}
 }
 
-@media (max-width: 800px){
-	.header div a{
-		float: none;
+@media (max-width: 630px){
+	.sidebar-sticky-wrapper{
+		width: 100%;
 	}
 
-	.header div a img{
-		width: 75px;
-		height: 75px;
+	.sidebar{
+		width: 100%;
+		height: 80px;
+		border-right: 0;
+		border-bottom: 1px solid #2B5166;
+		text-align: right;
+		padding: 0;
 	}
 
-	.header div h1{
-		margin-top: 0;
+	.sidebar a{
+		position: absolute;
+		left: 20px;
+		top: 4px;
 	}
-}
 
-@media (max-width: 600px){
-	.two-column{
-		padding: 0 10%;
+	.sidebar a img{
+		width: 80px;
+		margin: -5px 20px 0 0;
+		position: relative;
 	}
+
+	.sidebar div h2{
+		display: none;
+	}
+
+	.guide-dropdown{
+		display: inline-block;
+		text-align: center;
+	}
+	.guide-dropdown:hover{
+		background-color: #2B5166;
+	}
+	.guide-dropdown:hover > li a h2{
+		color: #EEEFEE;
+	}
+
+	.guide-dropdown li:hover > ul{
+		display: block;
+		background-color: #EEEFEE;
+		padding: 30px;
+		border: 1px solid #2B5166;
+	}
+
+	.guide-dropdown ul{
+		display: none;
+	}
+
+	.guide-dropdown li a{
+		position: initial;
+	}
+
+	.guide-dropdown li a h2{
+		display: inline-block;
+		padding: 30px 30px 0 30px;
+		margin-bottom: 30px;
+	}
+
+	.sidebar a h5{
+		margin: -1px 0;
+		padding: 5px;
+	}
+
+
+	.column-content{
+		padding: 100px 14% 20px;
+	}
+
+
+	.tab{
+		margin-top: 119px;
+		margin-right: -120px;
+		width: 280px;
+	}
+
 }
 
 @media (max-width: 530px){
 	.header div h1{
 		width: 250px;
-		margin-top: 16px;
+		margin-top: 30px;
 	}
 }
 
