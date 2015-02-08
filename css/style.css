@@ -323,6 +323,7 @@ ul{
 	}
 	.guide-dropdown:hover{
 		background-color: #2B5166;
+		cursor: pointer;
 	}
 	.guide-dropdown:hover > li h2{
 		color: #EEEFEE;
@@ -330,13 +331,13 @@ ul{
 
 	.guide-dropdown li:hover > ul{
 		display: block;
-		background-color: #EEEFEE;
-		padding: 30px;
-		border: 1px solid #2B5166;
 	}
 
 	.guide-dropdown ul{
 		display: none;
+		background-color: #EEEFEE;
+		padding: 30px;
+		border: 1px solid #2B5166;
 	}
 
 	.guide-dropdown li a{
