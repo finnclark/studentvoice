@@ -157,9 +157,15 @@
     }
 	});
 
-	$(".guide-dropdown").click(function(){
-    $(".guide-dropdown li ul").toggle();
-	});
+	if ( $(window).width() > 630) {     
+
+	}
+	else {
+		$(".guide-dropdown").click(function(){
+			$(".guide-dropdown li ul").toggle();
+		});
+	}
+	
 </script>
 
 </body>
