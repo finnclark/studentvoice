@@ -210,14 +210,14 @@ ul{
 	font-size: 18px;
 }
 
-.guide-dropdown li a h2{
+.guide-dropdown li h2{
 	display: none;
 }
 
 .sidebar a h5{
 	margin: 20px 0;
 	padding: 4px; 
-	background-color: #eeefee;
+	background-color: #F7F7F8;
 	border: 1px solid #2B5166;
 }
 .sidebar a h5:hover{
@@ -324,7 +324,7 @@ ul{
 	.guide-dropdown:hover{
 		background-color: #2B5166;
 	}
-	.guide-dropdown:hover > li a h2{
+	.guide-dropdown:hover > li h2{
 		color: #EEEFEE;
 	}
 
@@ -343,7 +343,7 @@ ul{
 		position: initial;
 	}
 
-	.guide-dropdown li a h2{
+	.guide-dropdown li h2{
 		display: inline-block;
 		padding: 30px 30px 0 30px;
 		margin-bottom: 30px;

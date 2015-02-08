@@ -33,7 +33,7 @@
 					<a href="index.html"><img src="img/megaphone-blue.svg"></a>
 					<h2>Inside The Guide</h2>
 					<ul class="guide-dropdown">
-						<li><a href=""><h2>Inside The Guide</h2></a>
+						<li><h2>Inside The Guide</h2>
 							<ul>
 								<li><a href="#community"><h5>Community</h5></a></li>
 								<li><a href="#grades"><h5>Grades</h5></a></li>
@@ -150,12 +150,11 @@
     var target = $( $(this).attr('href') );
 
     if( target.length ) {
-        event.preventDefault();
-        $('html, body').animate({
-            scrollTop: target.offset().top
-        }, 1000);
+      event.preventDefault();
+      $('html, body').animate({
+        scrollTop: target.offset().top
+      }, 1000);
     }
-
 	});
 </script>
 
