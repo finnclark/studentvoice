@@ -366,6 +366,10 @@ ul{
 	}
 
 
+	.sticky-wrapper{
+		height: 39px !important;
+	}
+
 	.tab{
 		margin-top: 119px;
 		margin-right: -120px;
