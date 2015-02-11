@@ -49,6 +49,7 @@ h2{
 	font-size: 16px;
 	letter-spacing: 2px;
 	margin: 0;
+	color: #2B5166;
 }
 
 h3{
@@ -66,6 +67,7 @@ h3{
 h4{
 	font-family: "founders-med", helvetica, sans-serif;
 	font-size: 14px;
+	color: #2B5166;
 	margin: 0;
 }
 
@@ -278,15 +280,19 @@ ul{
 }
 
 .column-content{
-	padding: 100px 0 100px 13%;
+	padding: 100px 0 100px 235px;
 }
 
 .column-content h2{
-	margin-bottom: 30px;
+	margin-bottom: 60px;
+}
+
+.column-content img, .column-content h4:first-child{
+	margin-top: 82px;
 }
 
 .column-content h4{
-	margin-bottom: 10px;
+	margin-bottom: 4px;
 }
 
 .column-content p{
@@ -297,6 +303,10 @@ ul{
 	margin-bottom: 0;
 }
 
+.column-right{
+	margin-left: -70px !important;
+}
+
 
 /* Survival Guide Media Queries */
 
@@ -305,13 +315,24 @@ ul{
 
 	.column-content{
 		padding: 100px 0 100px 15%;
+		margin-left: 50px;
 	}
+
 }
 
-@media (max-width: 992px){
+@media (max-width: 991px){
 
 	.column-content{
-		padding: 100px 13% 40px 35%;
+		padding: 70px 13% 40px 35%;
+		margin-left: 0px;
+	}
+
+	.column-right{
+		margin-left: 0px !important;
+	}
+
+	.column-content img, .column-content h4:first-child{
+		margin-top: 0px;
 	}
 }
 
