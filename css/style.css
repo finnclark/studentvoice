@@ -199,13 +199,13 @@ ul{
 	width: 200px;
 	height: 800px;
 	text-align: center;
-	background-color: #EEEFEE;
+	background-color: #2B5166;
 	border-right: 1px solid #2B5166;
 }
 
 .sidebar img{
-	width: 100px;
-	margin: 30px auto 30px;
+	width: 90px;
+	margin: 50px auto;
 	cursor: pointer;
 }
 .nav-dropdown li:hover > ul, .nav-dropdown li:hover > div{
@@ -233,12 +233,13 @@ ul{
 	top: 50px;
 	border-top: 30px solid transparent;
 	border-bottom: 30px solid transparent;
-	border-right: 30px solid #2b5267;
+	border-right: 30px solid #EEEFEE;
 }
 
 .sidebar h2{
 	margin-bottom: 50px;
 	font-size: 18px;
+	color: #EEEFEE;
 }
 
 .guide-dropdown li h2, .nav-dropdown li ul{
@@ -248,18 +249,23 @@ ul{
 .sidebar a h5{
 	margin: 20px 0;
 	padding: 4px; 
-	background-color: #F7F7F8;
-	border: 1px solid #2B5166;
+	color: #EEEFEE;
+	background-color: #2B5166;
+	border: 1px solid #EEEFEE;
 }
 .sidebar a h5:hover{
-	background-color: #2B5166;
-	color: #EEEFEE;
+	background-color: #F7F7F8;
+	color: #2B5166;
+	border: 1px solid #2B5166;
 }
 
 .tab{
-	background-color: #2B5166;
+	background-color: #eeefee;
+	color: #2B5166;
 	width: 200px;
+	border: 1px solid #2b5166;
 	height: 40px;
+	border-bottom: none;
 	margin: 79px -80px -120px 0;
 	padding: 12px 0px 0px 40px;
 	float: right;
@@ -352,10 +358,11 @@ ul{
 	}
 
 	.sidebar img{
-		width: 80px;
+		width: 60px;
 		margin: 0;
+		padding: 20px 0;
 		position: absolute;
-		top: 0;
+		top: 0px;
 		left: 20px;
 	}
 
@@ -420,8 +427,11 @@ ul{
 	}
 
 	.sidebar a h5{
-		margin: -1px 0;
+		margin: 2px 0;
 		padding: 5px;
+	}
+	.sidebar a h5:hover{
+		background-color: #F7F7F8;
 	}
 
 
